@@ -1,0 +1,27 @@
+---
+title: Research Software
+author: John McLevey
+bibliography: ../textbook/references.bib
+---
+
+## Git + GitHub Account
+
+## Text Editor / IDEA
+
+- John: VS Code
+- Johannes: posit / RStudio?
+
+## Virtual Environments
+
+- John: `conda` / `mamba`
+- Johannes: ?
+
+## Python or R
+
+::: {.panel-tabset}
+## Python
+- Installation instructions...
+
+## R
+- Installation instructions... 
+:::

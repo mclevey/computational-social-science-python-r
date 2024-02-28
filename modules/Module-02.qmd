@@ -1,0 +1,99 @@
+---
+title: "Module 02: Data"
+subtitle: "Introduction to Computational Social Science"
+author: "John McLevey and/or Johannes Gruber"
+date-modified: last-modified
+description: "Short description..."
+abstract: "Slightly longer description..."
+abstract-title: "Module Summary"
+keywords: computational social science, python, r, etc.
+repo-url: https://github.com/mclevey/computational-social-science-python-r/
+repo-branch: master
+repo-actions: [edit, issue, source]
+sharing: [twitter, facebook, linkedin]
+bibliography: "../textbook/references.bib"
+csl: "../textbook/apsa.csl"
+citations-hover: true
+footnotes-hover: true
+strip-comments: true
+pdf-engine: xelatex
+format:
+  html:
+    toc: true
+    html-math-method: katex
+    # favicon: logo.png
+    #  ^ GESIS logo?
+    email-obfuscation: javascript
+    fig-align: left
+    fig-format: svg
+    lightbox: true
+    code-fold: false
+    code-overflow: scroll
+    code-line-numbers: false
+    code-copy: hover
+    code-block-border-left: gray 
+    code-block-bg: slate
+    link-external-newwindow: true
+    execute:
+      echo: true
+      warning: false
+      cache: true
+      freeze: false
+  pdf:
+    keep-tex: false
+    documentclass: report
+    classoption: [onecolumn, portrait] # could use [twocolumn, landscape] if there is a lot of text content.
+    papersize: A4
+    toc: true
+    toc-depth: 3
+    toc-title: Module Overview
+    lof: false
+    lot: false
+    number-sections: false
+    colorlinks: true
+    mainfont: Minion Pro
+    monofont: Menlo
+    sansfont: Helvetica Neue
+    highlight-style: github
+    code-block-border-left: gray
+    code-block-bg: "#f5f6f7"
+    fig-align: left
+    fig-format: pdf
+    indent: true
+    execute:
+      echo: true
+      warning: false
+      cache: true
+      freeze: true
+    geometry:
+      - top=30mm
+      - left=20mm
+      - right=60mm
+      - heightrounded
+---
+
+## Learning Objectives
+
+:::{.callout-note collapse="false"}
+## By the end of the course module, students will be able to: 
+1. Coming soon...
+2. Coming soon...
+3. Coming soon...
+:::
+
+## Module Topics
+
+## Assigned Reading + Lecture Slides
+
+- [Introduction](../../textbook/chapters/1-introduction.qmd)
+- [Module 1 Slides](../../slides/Slides-01.qmd)
+
+### Questions, Tasks, and Challenges
+
+Coming soon...
+
+## Recommended Additional Resources
+
+- Coming soon...
+
+## References

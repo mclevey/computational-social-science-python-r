@@ -1,0 +1,53 @@
+project:
+  type: book
+  output-dir: _book
+  
+book:
+  title: "Introduction to Computational Social Science"
+  subtitle: "GESIS Fall Seminar"
+  author: "John McLevey and Johannes Gruber"
+  date: "01/01/2024"
+  chapters:
+    - index.qmd
+    - chapters/1-introduction.qmd
+    # ... 
+
+pdf-engine: xelatex
+bibliography: references.bib
+csl: apsa.csl
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrbook
+    keep-tex: false
+    classoption: [onecolumn, portrait] # [twocolumn, landscape]
+    papersize: A4
+    toc: true
+    toc-depth: 3
+    toc-title: Contents
+    lof: true
+    lot: true
+    number-sections: true
+    colorlinks: true
+    mainfont: Minion Pro
+    monofont: Menlo
+    sansfont: Helvetica Neue
+    highlight-style: github
+    code-block-border-left: gray
+    code-block-bg: "#f5f6f7"
+    fig-align: center
+    fig-format: pdf
+    execute:
+      echo: true
+      warning: false
+      cache: true
+      freeze: true
+    geometry:
+      - top=30mm
+      - left=20mm
+      - right=60mm
+      - heightrounded
+  # epub:
+    # cover: ../images/cover.png

@@ -1,0 +1,3 @@
+CC By ...
+
+License with GESIS

@@ -1,0 +1,75 @@
+project:
+  type: website
+  render:
+    - "*.qmd"
+    - "*.ipynb"
+  output-dir: docs
+  resources:
+    - "images/"
+    - "slides/"
+    - "textbook/book/"
+
+website:
+  site-url: "https://www.johnmclevey.com/computational-social-science-python-r/"
+  # google-analytics: # EXAMPLE: "G-3Z3Z3Z3Z3Z3"
+  
+  repo-url: https://github.com/mclevey/computational-social-science-python-r
+  repo-actions: [edit, issue, source]
+  open-graph: true
+
+  title: "Introduction to Computational Social Science<br>GESIS Fall Seminar, 2024"
+  navbar:
+    # logo: images/logo.png
+    # ^ Maybe we can use the (new) GESIS logo here? 
+    title: false # "Computational Social Science"
+    align: center
+    left:
+      - text: "Home"
+        file: index.qmd
+      - text: "Syllabus"
+        file: pages/syllabus.qmd
+      - text: "Instructors"
+        file: pages/about.qmd
+      - text: "Textbook"
+        file: textbook/index.qmd
+      - text: "Software"
+        file: pages/software.qmd
+      - text: "Modules"
+        menu:
+          - text: Module 01 (Introduction)
+            href: modules/Module-01.qmd
+          - text: Module 02 (Scientific Computing)
+            href: modules/Module-02.qmd
+      - text: "Slides"
+        menu:
+          - text: Module 01 Slides (Introduction)
+            href: slides/Slides-01.html
+          - text: Module 02 Slides (Data)
+            href: slides/Slides-02.html
+          - text: Module 03 Slides (Text Analysis)
+            href: slides/Slides-03.html
+          - text: Module 04 Slides (Network Analysis)
+            href: slides/Slides-04.html
+          - text: Module 05 Slides (Agent-Based Models)
+            href: slides/Slides-05.html
+          - text: Module 06 Slides (Conclusion)
+            href: slides/Slides-06.html
+      - text: "Additional Resources"
+        file: pages/resources.qmd
+    right: 
+      - text: "License"
+        file: LICENSE.md
+      - icon: github
+        href: https://github.com/mclevey/data-methods-models
+        aria-label: GitHub
+  sidebar:
+    - title: "Textbook"
+      logo: ../images/cover.png
+      contents:
+        - textbook/index.qmd
+        - textbook/chapters/1-introduction.qmd
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
