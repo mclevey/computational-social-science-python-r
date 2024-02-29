@@ -40,20 +40,34 @@ website:
             href: modules/Module-01.qmd
           - text: Module 02 (Scientific Computing)
             href: modules/Module-02.qmd
-      - text: "Slides"
+      - text: "Python Slides"
         menu:
-          - text: Module 01 Slides (Introduction)
-            href: slides/Slides-01.html
-          - text: Module 02 Slides (Data)
-            href: slides/Slides-02.html
-          - text: Module 03 Slides (Text Analysis)
-            href: slides/Slides-03.html
-          - text: Module 04 Slides (Network Analysis)
-            href: slides/Slides-04.html
-          - text: Module 05 Slides (Agent-Based Models)
-            href: slides/Slides-05.html
-          - text: Module 06 Slides (Conclusion)
-            href: slides/Slides-06.html
+          - text: Python Course - Module 01 Slides (Introduction)
+            href: python-slides/Python-01.html
+          - text: Python Course - Module 02 Slides (Data)
+            href: python-slides/Python-02.html
+          - text: Python Course - Module 03 Slides (Text Analysis)
+            href: python-slides/Python-03.html
+          - text: Python Course - Module 04 Slides (Network Analysis)
+            href: python-slides/Python-04.html
+          - text: Python Course - Module 05 Slides (Agent-Based Models)
+            href: python-slides/Python-05.html
+          - text: Python Course - Module 06 Slides (Conclusion)
+            href: python-slides/Python-06.html
+      - text: "R Slides"
+        menu:
+          - text: R Course - Module 01 Slides (Introduction)
+            href: r-slides/R-01.html
+          - text: R Course - Module 02 Slides (Data)
+            href: r-slides/R-02.html
+          - text: R Course - Module 03 Slides (Text Analysis)
+            href: r-slides/R-03.html
+          - text: R Course - Module 04 Slides (Network Analysis)
+            href: r-slides/R-04.html
+          - text: R Course - Module 05 Slides (Agent-Based Models)
+            href: r-slides/R-05.html
+          - text: R Course - Module 06 Slides (Conclusion)
+            href: r-slides/R-06.html
       - text: "Additional Resources"
         file: pages/resources.qmd
     right: 

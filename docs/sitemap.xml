@@ -18,7 +18,7 @@
   </url>
   <url>
     <loc>https://www.johnmclevey.com/computational-social-science-python-r/pages/syllabus.html</loc>
-    <lastmod>2024-02-28T15:38:31.299Z</lastmod>
+    <lastmod>2024-02-28T23:20:01.578Z</lastmod>
   </url>
   <url>
     <loc>https://www.johnmclevey.com/computational-social-science-python-r/pages/resources.html</loc>
@@ -38,7 +38,7 @@
   </url>
   <url>
     <loc>https://www.johnmclevey.com/computational-social-science-python-r/index.html</loc>
-    <lastmod>2024-02-28T15:35:56.421Z</lastmod>
+    <lastmod>2024-02-28T18:49:51.900Z</lastmod>
   </url>
   <url>
     <loc>https://www.johnmclevey.com/computational-social-science-python-r/modules/Module-01.html</loc>
@@ -50,7 +50,7 @@
   </url>
   <url>
     <loc>https://www.johnmclevey.com/computational-social-science-python-r/modules/Module-05.html</loc>
-    <lastmod>2024-02-28T15:28:38.592Z</lastmod>
+    <lastmod>2024-02-28T19:00:03.726Z</lastmod>
   </url>
   <url>
     <loc>https://www.johnmclevey.com/computational-social-science-python-r/pages/about.html</loc>
@@ -58,7 +58,7 @@
   </url>
   <url>
     <loc>https://www.johnmclevey.com/computational-social-science-python-r/pages/software.html</loc>
-    <lastmod>2024-02-28T15:42:03.920Z</lastmod>
+    <lastmod>2024-02-28T18:48:05.239Z</lastmod>
   </url>
   <url>
     <loc>https://www.johnmclevey.com/computational-social-science-python-r/slides/Slides-01.html</loc>
@@ -74,6 +74,74 @@
   </url>
   <url>
     <loc>https://www.johnmclevey.com/computational-social-science-python-r/textbook/chapters/1-introduction.html</loc>
+    <lastmod>2024-02-28T15:39:02.579Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.johnmclevey.com/computational-social-science-python-r/textbook/chapters/6-conclusion.html</loc>
+    <lastmod>2024-02-28T15:39:02.579Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.johnmclevey.com/computational-social-science-python-r/textbook/chapters/4-computational-network-analysis.html</loc>
+    <lastmod>2024-02-28T15:39:02.579Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.johnmclevey.com/computational-social-science-python-r/textbook/chapters/2-collecting-working-with-data.html</loc>
+    <lastmod>2024-02-28T15:39:02.579Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.johnmclevey.com/computational-social-science-python-r/r-slides/R-05.html</loc>
+    <lastmod>2024-02-28T15:31:26.335Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.johnmclevey.com/computational-social-science-python-r/r-slides/R-03.html</loc>
+    <lastmod>2024-02-28T15:31:21.435Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.johnmclevey.com/computational-social-science-python-r/r-slides/R-01.html</loc>
+    <lastmod>2024-02-28T15:31:14.260Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.johnmclevey.com/computational-social-science-python-r/python-slides/Python-05.html</loc>
+    <lastmod>2024-02-28T15:31:26.335Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.johnmclevey.com/computational-social-science-python-r/python-slides/Python-03.html</loc>
+    <lastmod>2024-02-28T15:31:21.435Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.johnmclevey.com/computational-social-science-python-r/python-slides/Python-01.html</loc>
+    <lastmod>2024-02-28T15:31:14.260Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.johnmclevey.com/computational-social-science-python-r/python-slides/Python-02.html</loc>
+    <lastmod>2024-02-28T15:31:19.017Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.johnmclevey.com/computational-social-science-python-r/python-slides/Python-04.html</loc>
+    <lastmod>2024-02-28T15:31:23.615Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.johnmclevey.com/computational-social-science-python-r/python-slides/Python-06.html</loc>
+    <lastmod>2024-02-28T15:33:16.589Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.johnmclevey.com/computational-social-science-python-r/r-slides/R-02.html</loc>
+    <lastmod>2024-02-28T15:31:19.017Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.johnmclevey.com/computational-social-science-python-r/r-slides/R-04.html</loc>
+    <lastmod>2024-02-28T15:31:23.615Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.johnmclevey.com/computational-social-science-python-r/r-slides/R-06.html</loc>
+    <lastmod>2024-02-28T15:33:16.589Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.johnmclevey.com/computational-social-science-python-r/textbook/chapters/3-computational-text-analysis.html</loc>
+    <lastmod>2024-02-28T15:39:02.579Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.johnmclevey.com/computational-social-science-python-r/textbook/chapters/5-simulation-abms.html</loc>
     <lastmod>2024-02-28T15:39:02.579Z</lastmod>
   </url>
 </urlset>

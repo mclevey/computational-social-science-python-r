@@ -1,0 +1,5 @@
+numpy
+pandas
+matplotlib
+seaborn
+pymc>=5

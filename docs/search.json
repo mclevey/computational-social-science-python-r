@@ -36,49 +36,49 @@
     "href": "pages/syllabus.html",
     "title": "Introduction to Computational Social Science",
     "section": "",
-    "text": "Add Johannes, maybe tab sets for the Python and R courses to flag that they are different courses using a common set of materials?"
+    "text": "Develop for Marlene soonish…"
   },
   {
     "objectID": "pages/syllabus.html#course-description",
     "href": "pages/syllabus.html#course-description",
     "title": "Introduction to Computational Social Science",
-    "section": "Course Description",
-    "text": "Course Description\n\nDevelop for Marlene soonish…"
+    "section": "",
+    "text": "Develop for Marlene soonish…"
   },
   {
     "objectID": "pages/syllabus.html#learning-objectives",
     "href": "pages/syllabus.html#learning-objectives",
     "title": "Introduction to Computational Social Science",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\nEach module in this course has it’s own specific learning objectives. You can find them at the top of each module overview page (accessible from the Modules menu item on the course website)."
+    "text": "Learning Objectives"
   },
   {
     "objectID": "pages/syllabus.html#readings",
     "href": "pages/syllabus.html#readings",
     "title": "Introduction to Computational Social Science",
     "section": "Readings",
-    "text": "Readings\n\nDo we want to keep the book subdirectory, or just the learning modules page?"
+    "text": "Readings"
   },
   {
     "objectID": "pages/syllabus.html#research-software",
     "href": "pages/syllabus.html#research-software",
     "title": "Introduction to Computational Social Science",
     "section": "Research Software",
-    "text": "Research Software\n\nUpdate for R, etc.\n\nWe will use Python and other open source software in this course. You can find details on installing and setting up your research software here. Note that Module 2 is focused on installing, setting up, and getting started with the required software."
+    "text": "Research Software\nThis course is offered in both Python (with John) and R (with Johannes). You can find details on installing and setting up the required research software here."
   },
   {
     "objectID": "pages/syllabus.html#course-project",
     "href": "pages/syllabus.html#course-project",
     "title": "Introduction to Computational Social Science",
     "section": "Course Project",
-    "text": "Course Project\n\nSuggestion from Marlene, see email"
+    "text": "Course Project"
   },
   {
     "objectID": "pages/syllabus.html#course-schedule",
     "href": "pages/syllabus.html#course-schedule",
     "title": "Introduction to Computational Social Science",
     "section": "Course Schedule",
-    "text": "Course Schedule"
+    "text": "Course Schedule\n\n\n\n\nModule\nDates\nReading\nPython Course\nR Course\n\n\n\n\n1\nIntroduction\nXXXX\nModule Notebook\nPython Slides\nR Slides\n\n\n2\nCollecting and Working with Data\nXXXX\nModule Notebook\nPython Slides\nR Slides\n\n\n3\nComputational Text Analysis\nXXXX\nModule Notebook\nPython Slides\nR Slides\n\n\n4\nComputational Network Analysis\nXXXX\nModule Notebook\nPython Slides\nR Slides\n\n\n5\nSocial Simulation & Agent-based Models\nXXXX\nModule Notebook\nPython Slides\nR Slides\n\n\n6\nConclusion\nXXXX\nModule Notebook\nPython Slides\nR Slides"
   },
   {
     "objectID": "modules/Module-06.html",
@@ -211,7 +211,7 @@
     "href": "index.html",
     "title": "Introduction to Computational Social Science",
     "section": "",
-    "text": "Welcome to the course website for FCIT 607: Data, Methods, and Models for Future Cities! This couse is a graduate-level introduction to reproducible research, modelling, and quantitative data analysis with an emphasis on causal, probabilistic, and futures thinking. It’s part of the Master of Future Cities (MFC) program offered by the Faculty of Environment at the University of Waterloo. You can access all course materials on this site for free, including the course syllabus, overviews of each learning module, lecture slides, and an open access textbook (currently in draft form).\nYou can learn a bit more about me and my approach to teaching modelling and quantiative data analysis here."
+    "text": "Coming soon…"
   },
   {
     "objectID": "index.html#the-master-of-future-cities-mfc-program",
@@ -419,5 +419,124 @@
     "title": "Introduction to Computational Social Science",
     "section": "About the GESIS Fall Seminar",
     "text": "About the GESIS Fall Seminar\n\nMay not need this content, especially if in About…"
+  },
+  {
+    "objectID": "textbook/chapters/6-conclusion.html",
+    "href": "textbook/chapters/6-conclusion.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "Coming soon…"
+  },
+  {
+    "objectID": "textbook/chapters/4-computational-network-analysis.html",
+    "href": "textbook/chapters/4-computational-network-analysis.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "Coming soon…"
+  },
+  {
+    "objectID": "textbook/chapters/2-collecting-working-with-data.html",
+    "href": "textbook/chapters/2-collecting-working-with-data.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "Coming soon…"
+  },
+  {
+    "objectID": "r-slides/R-05.html#coming-soon",
+    "href": "r-slides/R-05.html#coming-soon",
+    "title": "Social Simulation & Agent-based Models",
+    "section": "Coming soon…",
+    "text": "Coming soon…\n\n\n\nLink to Live Course Website Here"
+  },
+  {
+    "objectID": "r-slides/R-03.html#coming-soon",
+    "href": "r-slides/R-03.html#coming-soon",
+    "title": "Computational Text Analysis",
+    "section": "Coming soon…",
+    "text": "Coming soon…\n\n\n\nLink to Live Course Website Here"
+  },
+  {
+    "objectID": "r-slides/R-01.html#coming-soon",
+    "href": "r-slides/R-01.html#coming-soon",
+    "title": "Introduction",
+    "section": "Coming soon…",
+    "text": "Coming soon…\n\n\n\nLink to Live Course Website Here"
+  },
+  {
+    "objectID": "python-slides/Python-05.html#coming-soon",
+    "href": "python-slides/Python-05.html#coming-soon",
+    "title": "Social Simulation & Agent-based Models",
+    "section": "Coming soon…",
+    "text": "Coming soon…\n\n\n\nLink to Live Course Website Here"
+  },
+  {
+    "objectID": "python-slides/Python-03.html#coming-soon",
+    "href": "python-slides/Python-03.html#coming-soon",
+    "title": "Computational Text Analysis",
+    "section": "Coming soon…",
+    "text": "Coming soon…\n\n\n\nLink to Live Course Website Here"
+  },
+  {
+    "objectID": "python-slides/Python-01.html#coming-soon",
+    "href": "python-slides/Python-01.html#coming-soon",
+    "title": "Introduction",
+    "section": "Coming soon…",
+    "text": "Coming soon…\n\n\n\nLink to Live Course Website Here"
+  },
+  {
+    "objectID": "python-slides/Python-02.html#coming-soon",
+    "href": "python-slides/Python-02.html#coming-soon",
+    "title": "Data",
+    "section": "Coming soon…",
+    "text": "Coming soon…\n\n\n\nLink to Live Course Website Here"
+  },
+  {
+    "objectID": "python-slides/Python-04.html#coming-soon",
+    "href": "python-slides/Python-04.html#coming-soon",
+    "title": "Computational Network Analysis",
+    "section": "Coming soon…",
+    "text": "Coming soon…\n\n\n\nLink to Live Course Website Here"
+  },
+  {
+    "objectID": "python-slides/Python-06.html#coming-soon",
+    "href": "python-slides/Python-06.html#coming-soon",
+    "title": "Conclusion",
+    "section": "Coming soon…",
+    "text": "Coming soon…\n\n\n\nLink to Live Course Website Here"
+  },
+  {
+    "objectID": "r-slides/R-02.html#coming-soon",
+    "href": "r-slides/R-02.html#coming-soon",
+    "title": "Data",
+    "section": "Coming soon…",
+    "text": "Coming soon…\n\n\n\nLink to Live Course Website Here"
+  },
+  {
+    "objectID": "r-slides/R-04.html#coming-soon",
+    "href": "r-slides/R-04.html#coming-soon",
+    "title": "Computational Network Analysis",
+    "section": "Coming soon…",
+    "text": "Coming soon…\n\n\n\nLink to Live Course Website Here"
+  },
+  {
+    "objectID": "r-slides/R-06.html#coming-soon",
+    "href": "r-slides/R-06.html#coming-soon",
+    "title": "Conclusion",
+    "section": "Coming soon…",
+    "text": "Coming soon…\n\n\n\nLink to Live Course Website Here"
+  },
+  {
+    "objectID": "textbook/chapters/3-computational-text-analysis.html",
+    "href": "textbook/chapters/3-computational-text-analysis.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "Coming soon…"
+  },
+  {
+    "objectID": "textbook/chapters/5-simulation-abms.html",
+    "href": "textbook/chapters/5-simulation-abms.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "Coming soon…"
   }
 ]

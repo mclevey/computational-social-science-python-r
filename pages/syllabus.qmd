@@ -1,45 +1,39 @@
 ---
 title: Introduction to Computational Social Science
 description: "GESIS Fall Seminar, 2024"
-author: John McLevey and Johannes Gruber
+author: 
+  - name: John McLevey
+    email: john.mclevey@uwaterloo.ca
+    affiliations:
+      - name: University of Waterloo
+  - name: Johannes Gruber
+    email: j.b.gruber@uva.nl
+    affiliations:
+      - name: Universiteit Amsterdam
 date: 02/28/2024
 date-modified: last-modified
 ---
 
-- Add Johannes, maybe tab sets for the Python and R courses to flag that they are different courses using a common set of materials?
-
-:::{.callout-note}
-## Instructor Information
-Dr. **John McLevey** (he/him)  
-Knowledge Integration, Sociology & Legal Studies   
-University of Waterloo   
-Email: <john.mclevey@uwaterloo.ca>
-
-**Office Hours**: Mondays, 1:00 - 4:00 pm or by appointment   
-**Office**: EV1-215, University of Waterloo   
-:::
-
 ## Course Description
-
-- Develop for Marlene soonish...
 
 ## Learning Objectives
 
-Each module in this course has it's own specific learning objectives. You can find them at the top of each module overview page (accessible from the *Modules* menu item on the course website). 
-
 ## Readings
-
-- Do we want to keep the book subdirectory, or just the learning modules page? 
 
 ## Research Software
 
-- Update for R, etc.
-
-We will use Python and other open source software in this course. You can find details on installing and setting up your research software [here](software.qmd). Note that Module 2 is focused on installing, setting up, and getting started with the required software.
+This course is offered in both Python (with John) and R (with Johannes). You can find details on installing and setting up the required research software [here](software.qmd).
 
 ## Course Project
 
-- Suggestion from Marlene, see email
-
 ## Course Schedule
+
+|  | Module | Dates | Reading | Python Course | R Course |
+|:-- |:-------|:------|:------|:--------|:-----------|
+| 1 | [Introduction](../modules/Module-01.qmd) | XXXX | [Module Notebook](../textbook/chapters/1-introduction.qmd) | [Python Slides](../python-slides/Python-01.qmd) | [R Slides](../r-slides/R-01.qmd) |
+| 2 | [Collecting and Working with Data](../modules/Module-02.qmd) | XXXX | [Module Notebook](../textbook/chapters/2-collecting-working-with-data.qmd) | [Python Slides](../python-slides/Python-02.qmd) | [R Slides](../r-slides/R-01.qmd) |
+| 3 | [Computational Text Analysis](../modules/Module-03.qmd) | XXXX | [Module Notebook](../textbook/chapters/3-computational-text-analysis.qmd) | [Python Slides](../python-slides/Python-03.qmd) | [R Slides](../r-slides/R-01.qmd) |
+| 4 | [Computational Network Analysis](../modules/Module-04.qmd) | XXXX | [Module Notebook](../textbook/chapters/4-computational-network-analysis.qmd) | [Python Slides](../python-slides/Python-04.qmd) | [R Slides](../r-slides/R-01.qmd) |
+| 5 | [Social Simulation & Agent-based Models](../modules/Module-05.qmd) | XXXX | [Module Notebook](../textbook/chapters/5-simulation-abms.qmd) | [Python Slides](../python-slides/Python-05.qmd) | [R Slides](../r-slides/R-01.qmd) |
+| 6 | [Conclusion](../modules/Module-06.qmd) | XXXX | [Module Notebook](../textbook/chapters/6-conclusion.qmd) | [Python Slides](../python-slides/Python-06.qmd) | [R Slides](../r-slides/R-01.qmd) |
 
