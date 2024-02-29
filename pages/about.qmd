@@ -1,9 +1,8 @@
 # About 
 
-## Instructors
+## John McLevey (Python course)
 
-- John McLevey 
-- Johannes Gruber 
+## Johannes Gruber (R course)
 
-## GESIS
+## GESIS Fall Seminar in Computational Social Science
 

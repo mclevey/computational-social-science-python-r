@@ -2,12 +2,12 @@
   {
     "objectID": "textbook/index.html",
     "href": "textbook/index.html",
-    "title": "Preface",
+    "title": "Course Materials",
     "section": "",
-    "text": "Preface\n\nConnection to @mclevey2022doing…\n\n\n\n\n\n\n\nThis is a Manuscript in Progress\n\n\n\n\nWhat to expect\n\nHow to give feedback",
+    "text": "Johannes: Should we call this part of the course website “Notebooks” or something other than “Textbook?” Let me know what you think (or make any changes you like).",
     "crumbs": [
       "Textbook",
-      "Preface"
+      "Course Materials"
     ]
   },
   {
@@ -64,7 +64,7 @@
     "href": "pages/syllabus.html#research-software",
     "title": "Introduction to Computational Social Science",
     "section": "Research Software",
-    "text": "Research Software\nThis course is offered in both Python (with John) and R (with Johannes). You can find details on installing and setting up the required research software here."
+    "text": "Research Software\nThis course is offered in both Python (with John and R (with Johannes. You can find details on installing and setting up the required research software here."
   },
   {
     "objectID": "pages/syllabus.html#course-project",
@@ -83,126 +83,126 @@
   {
     "objectID": "modules/Module-06.html",
     "href": "modules/Module-06.html",
-    "title": "Module 06: Conclusion",
+    "title": "Conclusion",
     "section": "",
     "text": "By the end of the course module, students will be able to:\n\n\n\n\n\n\nComing soon…\nComing soon…\nComing soon…"
   },
   {
     "objectID": "modules/Module-06.html#learning-objectives",
     "href": "modules/Module-06.html#learning-objectives",
-    "title": "Module 06: Conclusion",
+    "title": "Conclusion",
     "section": "",
     "text": "By the end of the course module, students will be able to:\n\n\n\n\n\n\nComing soon…\nComing soon…\nComing soon…"
   },
   {
     "objectID": "modules/Module-06.html#module-topics",
     "href": "modules/Module-06.html#module-topics",
-    "title": "Module 06: Conclusion",
+    "title": "Conclusion",
     "section": "Module Topics",
     "text": "Module Topics"
   },
   {
     "objectID": "modules/Module-06.html#assigned-reading-lecture-slides",
     "href": "modules/Module-06.html#assigned-reading-lecture-slides",
-    "title": "Module 06: Conclusion",
+    "title": "Conclusion",
     "section": "Assigned Reading + Lecture Slides",
-    "text": "Assigned Reading + Lecture Slides\n\nIntroduction\nModule 1 Slides\n\n\nQuestions, Tasks, and Challenges\nComing soon…"
+    "text": "Assigned Reading + Lecture Slides\n\nComing soon…\nPython Course Slides\n\nModule 6 Slides\n\nR Course slides\n\nModule 6 Slides\n\n\n\nQuestions, Tasks, and Challenges\nComing soon…"
   },
   {
     "objectID": "modules/Module-06.html#recommended-additional-resources",
     "href": "modules/Module-06.html#recommended-additional-resources",
-    "title": "Module 06: Conclusion",
+    "title": "Conclusion",
     "section": "Recommended Additional Resources",
     "text": "Recommended Additional Resources\n\nComing soon…"
   },
   {
     "objectID": "modules/Module-06.html#references",
     "href": "modules/Module-06.html#references",
-    "title": "Module 06: Conclusion",
+    "title": "Conclusion",
     "section": "References",
     "text": "References"
   },
   {
     "objectID": "modules/Module-04.html",
     "href": "modules/Module-04.html",
-    "title": "Module 04: Computational Network Analysis",
+    "title": "Computational Network Analysis",
     "section": "",
     "text": "By the end of the course module, students will be able to:\n\n\n\n\n\n\nComing soon…\nComing soon…\nComing soon…"
   },
   {
     "objectID": "modules/Module-04.html#learning-objectives",
     "href": "modules/Module-04.html#learning-objectives",
-    "title": "Module 04: Computational Network Analysis",
+    "title": "Computational Network Analysis",
     "section": "",
     "text": "By the end of the course module, students will be able to:\n\n\n\n\n\n\nComing soon…\nComing soon…\nComing soon…"
   },
   {
     "objectID": "modules/Module-04.html#module-topics",
     "href": "modules/Module-04.html#module-topics",
-    "title": "Module 04: Computational Network Analysis",
+    "title": "Computational Network Analysis",
     "section": "Module Topics",
     "text": "Module Topics"
   },
   {
     "objectID": "modules/Module-04.html#assigned-reading-lecture-slides",
     "href": "modules/Module-04.html#assigned-reading-lecture-slides",
-    "title": "Module 04: Computational Network Analysis",
+    "title": "Computational Network Analysis",
     "section": "Assigned Reading + Lecture Slides",
-    "text": "Assigned Reading + Lecture Slides\n\nIntroduction\nModule 1 Slides\n\n\nQuestions, Tasks, and Challenges\nComing soon…"
+    "text": "Assigned Reading + Lecture Slides\n\nComing soon…\nPython Course Slides\n\nModule 4 Slides\n\nR Course slides\n\nModule 4 Slides\n\n\n\nQuestions, Tasks, and Challenges\nComing soon…"
   },
   {
     "objectID": "modules/Module-04.html#recommended-additional-resources",
     "href": "modules/Module-04.html#recommended-additional-resources",
-    "title": "Module 04: Computational Network Analysis",
+    "title": "Computational Network Analysis",
     "section": "Recommended Additional Resources",
     "text": "Recommended Additional Resources\n\nComing soon…"
   },
   {
     "objectID": "modules/Module-04.html#references",
     "href": "modules/Module-04.html#references",
-    "title": "Module 04: Computational Network Analysis",
+    "title": "Computational Network Analysis",
     "section": "References",
     "text": "References"
   },
   {
     "objectID": "modules/Module-02.html",
     "href": "modules/Module-02.html",
-    "title": "Module 02: Data",
+    "title": "Data Collection and Processing",
     "section": "",
     "text": "By the end of the course module, students will be able to:\n\n\n\n\n\n\nComing soon…\nComing soon…\nComing soon…"
   },
   {
     "objectID": "modules/Module-02.html#learning-objectives",
     "href": "modules/Module-02.html#learning-objectives",
-    "title": "Module 02: Data",
+    "title": "Data Collection and Processing",
     "section": "",
     "text": "By the end of the course module, students will be able to:\n\n\n\n\n\n\nComing soon…\nComing soon…\nComing soon…"
   },
   {
     "objectID": "modules/Module-02.html#module-topics",
     "href": "modules/Module-02.html#module-topics",
-    "title": "Module 02: Data",
+    "title": "Data Collection and Processing",
     "section": "Module Topics",
     "text": "Module Topics"
   },
   {
     "objectID": "modules/Module-02.html#assigned-reading-lecture-slides",
     "href": "modules/Module-02.html#assigned-reading-lecture-slides",
-    "title": "Module 02: Data",
+    "title": "Data Collection and Processing",
     "section": "Assigned Reading + Lecture Slides",
-    "text": "Assigned Reading + Lecture Slides\n\nIntroduction\nModule 1 Slides\n\n\nQuestions, Tasks, and Challenges\nComing soon…"
+    "text": "Assigned Reading + Lecture Slides\n\nComing soon…\nPython Course Slides\n\nModule 2 Slides\n\nR Course slides\n\nModule 2 Slides\n\n\n\nQuestions, Tasks, and Challenges\nComing soon…"
   },
   {
     "objectID": "modules/Module-02.html#recommended-additional-resources",
     "href": "modules/Module-02.html#recommended-additional-resources",
-    "title": "Module 02: Data",
+    "title": "Data Collection and Processing",
     "section": "Recommended Additional Resources",
     "text": "Recommended Additional Resources\n\nComing soon…"
   },
   {
     "objectID": "modules/Module-02.html#references",
     "href": "modules/Module-02.html#references",
-    "title": "Module 02: Data",
+    "title": "Data Collection and Processing",
     "section": "References",
     "text": "References"
   },
@@ -223,126 +223,126 @@
   {
     "objectID": "modules/Module-01.html",
     "href": "modules/Module-01.html",
-    "title": "Module 01: Introduction",
+    "title": "Introduction",
     "section": "",
     "text": "By the end of the course module, students will be able to:\n\n\n\n\n\n\nComing soon…\nComing soon…\nComing soon…"
   },
   {
     "objectID": "modules/Module-01.html#learning-objectives",
     "href": "modules/Module-01.html#learning-objectives",
-    "title": "Module 01: Introduction",
+    "title": "Introduction",
     "section": "",
     "text": "By the end of the course module, students will be able to:\n\n\n\n\n\n\nComing soon…\nComing soon…\nComing soon…"
   },
   {
     "objectID": "modules/Module-01.html#module-topics",
     "href": "modules/Module-01.html#module-topics",
-    "title": "Module 01: Introduction",
+    "title": "Introduction",
     "section": "Module Topics",
     "text": "Module Topics"
   },
   {
     "objectID": "modules/Module-01.html#assigned-reading-lecture-slides",
     "href": "modules/Module-01.html#assigned-reading-lecture-slides",
-    "title": "Module 01: Introduction",
+    "title": "Introduction",
     "section": "Assigned Reading + Lecture Slides",
-    "text": "Assigned Reading + Lecture Slides\n\nIntroduction\nModule 1 Slides\n\n\nQuestions, Tasks, and Challenges\nComing soon…"
+    "text": "Assigned Reading + Lecture Slides\n\nComing soon…\nPython Course Slides\n\nModule 1 Slides\n\nR Course slides\n\nModule 1 Slides\n\n\n\nQuestions, Tasks, and Challenges\nComing soon…"
   },
   {
     "objectID": "modules/Module-01.html#recommended-additional-resources",
     "href": "modules/Module-01.html#recommended-additional-resources",
-    "title": "Module 01: Introduction",
+    "title": "Introduction",
     "section": "Recommended Additional Resources",
     "text": "Recommended Additional Resources\n\nComing soon…"
   },
   {
     "objectID": "modules/Module-01.html#references",
     "href": "modules/Module-01.html#references",
-    "title": "Module 01: Introduction",
+    "title": "Introduction",
     "section": "References",
     "text": "References"
   },
   {
     "objectID": "modules/Module-03.html",
     "href": "modules/Module-03.html",
-    "title": "Module 03: Computational Text Analysis",
+    "title": "Computational Text Analysis",
     "section": "",
     "text": "By the end of the course module, students will be able to:\n\n\n\n\n\n\nComing soon…\nComing soon…\nComing soon…"
   },
   {
     "objectID": "modules/Module-03.html#learning-objectives",
     "href": "modules/Module-03.html#learning-objectives",
-    "title": "Module 03: Computational Text Analysis",
+    "title": "Computational Text Analysis",
     "section": "",
     "text": "By the end of the course module, students will be able to:\n\n\n\n\n\n\nComing soon…\nComing soon…\nComing soon…"
   },
   {
     "objectID": "modules/Module-03.html#module-topics",
     "href": "modules/Module-03.html#module-topics",
-    "title": "Module 03: Computational Text Analysis",
+    "title": "Computational Text Analysis",
     "section": "Module Topics",
     "text": "Module Topics"
   },
   {
     "objectID": "modules/Module-03.html#assigned-reading-lecture-slides",
     "href": "modules/Module-03.html#assigned-reading-lecture-slides",
-    "title": "Module 03: Computational Text Analysis",
+    "title": "Computational Text Analysis",
     "section": "Assigned Reading + Lecture Slides",
-    "text": "Assigned Reading + Lecture Slides\n\nIntroduction\nModule 1 Slides\n\n\nQuestions, Tasks, and Challenges\nComing soon…"
+    "text": "Assigned Reading + Lecture Slides\n\nComing soon…\nPython Course Slides\n\nModule 3 Slides\n\nR Course slides\n\nModule 3 Slides\n\n\n\nQuestions, Tasks, and Challenges\nComing soon…"
   },
   {
     "objectID": "modules/Module-03.html#recommended-additional-resources",
     "href": "modules/Module-03.html#recommended-additional-resources",
-    "title": "Module 03: Computational Text Analysis",
+    "title": "Computational Text Analysis",
     "section": "Recommended Additional Resources",
     "text": "Recommended Additional Resources\n\nComing soon…"
   },
   {
     "objectID": "modules/Module-03.html#references",
     "href": "modules/Module-03.html#references",
-    "title": "Module 03: Computational Text Analysis",
+    "title": "Computational Text Analysis",
     "section": "References",
     "text": "References"
   },
   {
     "objectID": "modules/Module-05.html",
     "href": "modules/Module-05.html",
-    "title": "Module 05: Social Simulation & Agent-based Models",
+    "title": "Social Simulation and Agent-based Models",
     "section": "",
     "text": "By the end of the course module, students will be able to:\n\n\n\n\n\n\nComing soon…\nComing soon…\nComing soon…"
   },
   {
     "objectID": "modules/Module-05.html#learning-objectives",
     "href": "modules/Module-05.html#learning-objectives",
-    "title": "Module 05: Social Simulation & Agent-based Models",
+    "title": "Social Simulation and Agent-based Models",
     "section": "",
     "text": "By the end of the course module, students will be able to:\n\n\n\n\n\n\nComing soon…\nComing soon…\nComing soon…"
   },
   {
     "objectID": "modules/Module-05.html#module-topics",
     "href": "modules/Module-05.html#module-topics",
-    "title": "Module 05: Social Simulation & Agent-based Models",
+    "title": "Social Simulation and Agent-based Models",
     "section": "Module Topics",
     "text": "Module Topics"
   },
   {
     "objectID": "modules/Module-05.html#assigned-reading-lecture-slides",
     "href": "modules/Module-05.html#assigned-reading-lecture-slides",
-    "title": "Module 05: Social Simulation & Agent-based Models",
+    "title": "Social Simulation and Agent-based Models",
     "section": "Assigned Reading + Lecture Slides",
-    "text": "Assigned Reading + Lecture Slides\n\nIntroduction\nModule 1 Slides\n\n\nQuestions, Tasks, and Challenges\nComing soon…"
+    "text": "Assigned Reading + Lecture Slides\n\nComing soon…\nPython Course Slides\n\nModule 5 Slides\n\nR Course slides\n\nModule 5 Slides\n\n\n\nQuestions, Tasks, and Challenges\nComing soon…"
   },
   {
     "objectID": "modules/Module-05.html#recommended-additional-resources",
     "href": "modules/Module-05.html#recommended-additional-resources",
-    "title": "Module 05: Social Simulation & Agent-based Models",
+    "title": "Social Simulation and Agent-based Models",
     "section": "Recommended Additional Resources",
     "text": "Recommended Additional Resources\n\nComing soon…"
   },
   {
     "objectID": "modules/Module-05.html#references",
     "href": "modules/Module-05.html#references",
-    "title": "Module 05: Social Simulation & Agent-based Models",
+    "title": "Social Simulation and Agent-based Models",
     "section": "References",
     "text": "References"
   },
@@ -486,7 +486,7 @@
   {
     "objectID": "python-slides/Python-02.html#coming-soon",
     "href": "python-slides/Python-02.html#coming-soon",
-    "title": "Data",
+    "title": "Data Collection and Processing",
     "section": "Coming soon…",
     "text": "Coming soon…\n\n\n\nLink to Live Course Website Here"
   },
@@ -528,15 +528,30 @@
   {
     "objectID": "textbook/chapters/3-computational-text-analysis.html",
     "href": "textbook/chapters/3-computational-text-analysis.html",
-    "title": "Introduction",
+    "title": "Computational Text Analysis",
     "section": "",
-    "text": "Coming soon…"
+    "text": "Coming soon…",
+    "crumbs": [
+      "Textbook",
+      "Computational Text Analysis"
+    ]
   },
   {
     "objectID": "textbook/chapters/5-simulation-abms.html",
     "href": "textbook/chapters/5-simulation-abms.html",
-    "title": "Introduction",
+    "title": "Social Simulation and Agent-based Models",
     "section": "",
-    "text": "Coming soon…"
+    "text": "Coming soon…",
+    "crumbs": [
+      "Textbook",
+      "Social Simulation and Agent-based Models"
+    ]
+  },
+  {
+    "objectID": "python-slides/Python-01.html#footnotes",
+    "href": "python-slides/Python-01.html#footnotes",
+    "title": "Introduction",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\ntest\ntest\ntest\ntest"
   }
 ]

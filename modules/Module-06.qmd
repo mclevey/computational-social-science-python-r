@@ -1,7 +1,15 @@
 ---
-title: "Module 06: Conclusion"
-subtitle: "Introduction to Computational Social Science"
-author: "John McLevey and/or Johannes Gruber"
+title: "Conclusion"
+subtitle: "**Module 06** | Introduction to Computational Social Science"
+author: 
+  - name: Johannes Gruber
+    email: j.b.gruber@uva.nl
+    affiliations:
+      - name: University of Amsterdam
+  - name: John McLevey
+    email: john.mclevey@uwaterloo.ca
+    affiliations:
+      - name: University of Waterloo
 date-modified: last-modified
 description: "Short description..."
 abstract: "Slightly longer description..."
@@ -85,8 +93,11 @@ format:
 
 ## Assigned Reading + Lecture Slides
 
-- [Introduction](../../textbook/chapters/1-introduction.qmd)
-- [Module 1 Slides](../../slides/Slides-01.qmd)
+- Coming soon... 
+- Python Course Slides
+  - [Module 6 Slides](../../python-slides/Python-06.qmd)
+- R Course slides 
+  - [Module 6 Slides](../../r-slides/R-06.qmd)
 
 ### Questions, Tasks, and Challenges
 

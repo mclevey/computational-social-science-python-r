@@ -38,19 +38,27 @@ website:
         menu:
           - text: Module 01 (Introduction)
             href: modules/Module-01.qmd
-          - text: Module 02 (Scientific Computing)
+          - text: Module 02 (Data Collection and Processing)
+            href: modules/Module-02.qmd
+          - text: Module 03 (Computational Text Analysis)
+            href: modules/Module-02.qmd
+          - text: Module 04 (Computational Network Analysis)
+            href: modules/Module-02.qmd
+          - text: Module 05 (Social Simulation and Agent-based Models)
+            href: modules/Module-02.qmd
+          - text: Module 06 (Conclusion)
             href: modules/Module-02.qmd
       - text: "Python Slides"
         menu:
           - text: Python Course - Module 01 Slides (Introduction)
             href: python-slides/Python-01.html
-          - text: Python Course - Module 02 Slides (Data)
+          - text: Python Course - Module 02 Slides (Data Collection and Processing)
             href: python-slides/Python-02.html
-          - text: Python Course - Module 03 Slides (Text Analysis)
+          - text: Python Course - Module 03 Slides (Computational Text Analysis)
             href: python-slides/Python-03.html
-          - text: Python Course - Module 04 Slides (Network Analysis)
+          - text: Python Course - Module 04 Slides (Computational Network Analysis)
             href: python-slides/Python-04.html
-          - text: Python Course - Module 05 Slides (Agent-Based Models)
+          - text: Python Course - Module 05 Slides (Social Simulation and Agent-Based Models)
             href: python-slides/Python-05.html
           - text: Python Course - Module 06 Slides (Conclusion)
             href: python-slides/Python-06.html
@@ -60,11 +68,11 @@ website:
             href: r-slides/R-01.html
           - text: R Course - Module 02 Slides (Data)
             href: r-slides/R-02.html
-          - text: R Course - Module 03 Slides (Text Analysis)
+          - text: R Course - Module 03 Slides (Computational Text Analysis)
             href: r-slides/R-03.html
-          - text: R Course - Module 04 Slides (Network Analysis)
+          - text: R Course - Module 04 Slides (Computational Network Analysis)
             href: r-slides/R-04.html
-          - text: R Course - Module 05 Slides (Agent-Based Models)
+          - text: R Course - Module 05 Slides (Social Simulation and Agent-Based Models)
             href: r-slides/R-05.html
           - text: R Course - Module 06 Slides (Conclusion)
             href: r-slides/R-06.html
@@ -82,6 +90,11 @@ website:
       contents:
         - textbook/index.qmd
         - textbook/chapters/1-introduction.qmd
+        - textbook/chapters/2-collecting-working-with-data.qmd
+        - textbook/chapters/3-computational-text-analysis.qmd
+        - textbook/chapters/4-computational-network-analysis.qmd
+        - textbook/chapters/5-simulation-abms.qmd
+        - textbook/chapters/6-conclusion.qmd
 format:
   html:
     theme: cosmo

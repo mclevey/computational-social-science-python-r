@@ -1,15 +1,16 @@
 ---
-author: John McLevey and Johannes Gruber
+title: Course Materials
+author: 
+  - name: John McLevey
+    email: john.mclevey@uwaterloo.ca
+    affiliations:
+      - name: University of Waterloo
+  - name: Johannes Gruber
+    email: j.b.gruber@uva.nl
+    affiliations:
+      - name: University of Amsterdam
 date: 06/22/2023
 date-modified: last-modified
 ---
 
-# Preface {.unnumbered}
-
-- Connection to @mclevey2022doing...
-
-:::{.callout-warning}
-## This is a Manuscript in Progress
-- What to expect   
-- How to give feedback
-:::
+> Johannes: Should we call this part of the course website "Notebooks" or something other than "Textbook?" Let me know what you think (or make any changes you like).

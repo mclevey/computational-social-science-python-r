@@ -1,8 +1,8 @@
 ---
 title: "Conclusion"
-subtitle: "GESIS Fall Seminar in Computational Social Science"
-author: John McLevey & Johannes Gruber
-institute: "Update these fields"
+subtitle: "**Module 06** | GESIS Fall Seminar in Computational Social Science"
+author: Johannes Gruber
+institute: "University of Amsterdam"
 format:
   revealjs: 
     theme: [default, custom.scss]

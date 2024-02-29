@@ -10,8 +10,12 @@ book:
   chapters:
     - index.qmd
     - chapters/1-introduction.qmd
-    # ... 
-
+    - chapters/2-collecting-working-with-data.qmd
+    - chapters/3-computational-text-analysis.qmd
+    - chapters/4-computational-network-analysis.qmd
+    - chapters/5-simulation-abms.qmd
+    - chapters/6-conclusion.qmd
+    
 pdf-engine: xelatex
 bibliography: references.bib
 csl: apsa.csl

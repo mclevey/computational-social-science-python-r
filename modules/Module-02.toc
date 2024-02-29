@@ -1,0 +1,6 @@
+\contentsline {section}{Learning Objectives}{1}{section*.2}%
+\contentsline {section}{Module Topics}{1}{section*.3}%
+\contentsline {section}{Assigned Reading + Lecture Slides}{1}{section*.4}%
+\contentsline {subsection}{Questions, Tasks, and Challenges}{1}{section*.5}%
+\contentsline {section}{Recommended Additional Resources}{1}{section*.6}%
+\contentsline {section}{References}{1}{section*.7}%

@@ -1,7 +1,15 @@
 ---
-title: "Module 04: Computational Network Analysis"
-subtitle: "Introduction to Computational Social Science"
-author: "John McLevey and/or Johannes Gruber"
+title: "Computational Network Analysis"
+subtitle: "**Module 04** | Introduction to Computational Social Science"
+author: 
+  - name: John McLevey
+    email: john.mclevey@uwaterloo.ca
+    affiliations:
+      - name: University of Waterloo
+  - name: Johannes Gruber
+    email: j.b.gruber@uva.nl
+    affiliations:
+      - name: University of Amsterdam
 date-modified: last-modified
 description: "Short description..."
 abstract: "Slightly longer description..."
@@ -85,8 +93,11 @@ format:
 
 ## Assigned Reading + Lecture Slides
 
-- [Introduction](../../textbook/chapters/1-introduction.qmd)
-- [Module 1 Slides](../../slides/Slides-01.qmd)
+- Coming soon... 
+- Python Course Slides
+  - [Module 4 Slides](../../python-slides/Python-04.qmd)
+- R Course slides 
+  - [Module 4 Slides](../../r-slides/R-04.qmd)
 
 ### Questions, Tasks, and Challenges
 

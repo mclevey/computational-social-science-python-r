@@ -1,7 +1,14 @@
 ---
 title: Introduction
-author: John McLevey
-affiliation: University of Waterloo
+author: 
+  - name: John McLevey
+    email: john.mclevey@uwaterloo.ca
+    affiliations:
+      - name: University of Waterloo
+  - name: Johannes Gruber
+    email: j.b.gruber@uva.nl
+    affiliations:
+      - name: University of Amsterdam
 date: 06/10/2023
 date-modified: last-modified
 ---

@@ -1,8 +1,8 @@
 ---
-title: "Data"
-subtitle: "GESIS Fall Seminar in Computational Social Science"
-author: John McLevey & Johannes Gruber
-institute: "Update these fields"
+title: "Data Collection and Processing"
+subtitle: "**Module 02** | GESIS Fall Seminar in Computational Social Science"
+author: John McLevey
+institute: "University of Waterloo"
 format:
   revealjs: 
     theme: [default, custom.scss]

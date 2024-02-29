@@ -9,7 +9,7 @@ author:
   - name: Johannes Gruber
     email: j.b.gruber@uva.nl
     affiliations:
-      - name: Universiteit Amsterdam
+      - name: University of Amsterdam
 date: 02/28/2024
 date-modified: last-modified
 ---
@@ -22,7 +22,7 @@ date-modified: last-modified
 
 ## Research Software
 
-This course is offered in both Python (with John) and R (with Johannes). You can find details on installing and setting up the required research software [here](software.qmd).
+This course is offered in both Python (with [John](about.qmd#john-mclevey-(python-course)) and R (with [Johannes](about.qmd#johannes-gruber-(r-course)). You can find details on installing and setting up the required research software [here](software.qmd).
 
 ## Course Project
 
