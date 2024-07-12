@@ -1,21 +1,29 @@
 ---
 title: "Introduction"
-subtitle: "**Module 01** | GESIS Fall Seminar in Computational Social Science"
-author: Johannes Gruber
-institute: "University of Amsterdam"
+subtitle: "**Module 01** | GESIS Fall Seminar \"Introduction to Computational Social Science\""
+author:
+  - name: Johannes B. Gruber
+    affiliations:
+      - name: VU Amsterdam
+  - name: John McLevey
+    affiliations:
+      - name: University of Waterloo
 format:
   revealjs: 
-    theme: [default, custom.scss]
+    # the theme increase the file size 3-5x and makes rendering much slower, I replaced it with a similar one while working
+    # theme: [default, custom.scss]
+    theme: moon
+    width: 1600
+    height: 900
     embed-resources: true
     execute:
       echo: true
-      warning: false
       cache: true
       freeze: true
     slide-number: true
     chalkboard: false
     preview-links: auto
-    smaller: true
+    smaller: false
     fig-align: left
     fig-format: svg
     lightbox: true
@@ -27,10 +35,647 @@ format:
     code-block-border-left: gray 
     code-block-bg: slate
     reference-location: document
-    # logo: ../images/logo.png
+    logo: media/logo_gesis.png
     footer: "*Link to Live Course Website Here*"
     email-obfuscation: javascript
 highlight-style: "nord"
+bibliography: references.bib
+editor_options:
+  chunk_output_type: console
 ---
 
-## Coming soon...
+## Schedule: GESIS Fall Seminar in Computational Social Science
+
+| time   | Session                                      |
+|--------|----------------------------------------------|
+| **Day 1**  | **Introduction to Computational Social Science** |
+| Day 2  | Obtaining Data                               |
+| Day 3  | Computational Text Analysis                  |
+| Day 4  | Computational Network Analysis               |
+| Day 5  | Social Simulation & Agent-based Models       |
+| Day 6  | Project Work Day and Outlook                 |
+
+: Course Schedule {.striped .hover}
+
+<!-- This is a comment. You can leave them here to take notes linked to the slides. -->
+
+
+## Who is Johannes?
+
+:::: {.columns}
+
+::: {.column width="60%"}
+- PostDoc at Department of Language, Literature and Communication at Vrije Universiteit Amsterdam and University of Amsterdam
+- Interested in:
+  - Computational Social Science
+  - Automated Text Analysis
+  - Hybrid Media Systems and Information Flows
+  - Protest and Democracy
+- Experience:
+  - R user since 2015 years
+  - R package developer since 2017
+  - Worked on several packages for text analysis, API access and web scraping (spacyr, quanteda.textmodels, LexisNexisTools, paperboy, traktok, rollama, amcat4-r, and more)
+:::
+
+::: {.column width="40%"}
+![](https://johannesbgruber.eu/img/JBGruber.jpg)
+
+Contact: 
+
+- [j.b.gruber@vu.nl](mailto:j.b.gruber@vu.nl) 
+- [\@jbgruber.bsky.social](https://bsky.app/profile/jbgruber.bsky.social)
+- [\@JohannesBGruber](https://twitter.com/JohannesBGruber)
+:::
+
+::::
+
+## Who is John?
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+:::
+
+::: {.column width="40%"}
+![](https://uwaterloo.ca/knowledge-integration/sites/default/files/styles/uw_is_media_x_large/public/uploads/images/john_mclevey_2022_0.jpeg)
+
+Contact: 
+
+- [john.mclevey@uwaterloo.ca](mailto:john.mclevey@uwaterloo.ca) 
+- [\@mclevey.bsky.social](https://bsky.app/profile/mclevey.bsky.social)
+:::
+
+::::
+
+# What is Computational Social Science
+
+John?
+- differences to other social sciences
+- opportunities
+- issues
+
+# Exploratory Data Analysis
+
+## The process
+
+<center>
+![](media/R-01/data-science.png){width="90%"}
+</center>
+
+::: {.ref}
+Source: @WickhamR4DS
+:::
+
+::: {.incremental}
+- "Data science is the process by which data becomes understanding, knowledge and insight"--Hadley Wickham
+- "You can't do data science in a GUI"--Hadley Wickham
+:::
+
+## The steps
+
+::: {.incremental}
+1. Generate questions about your data.
+2. Search for answers by visualising, transforming, and modelling your data.
+3. Use what you learn to refine your questions and/or generate new questions.
+:::
+
+<center>
+![](media/R-01/data-science.png){width="90%"}
+</center>
+
+# CSS Examples
+## Sounding the alarm based COVID numbers
+
+![](media/R-01/ggplot-covid.png)
+
+## Trump's tweets
+
+Data from <http://varianceexplained.org>:
+
+```{r}
+#| echo: false
+#| message: false
+library(tidyverse)
+# source: 
+# load(url("http://varianceexplained.org/files/trump_tweets_df.rda"))
+# saveRDS(trump_tweets_df, "data/R-01/trump_tweets.rds")
+trump_tweets_raw <- readRDS("data/R-01/trump_tweets.rds")
+glimpse(trump_tweets_raw)
+```
+
+
+## Time of Day
+
+```{r}
+#| echo: true
+#| fig-height: 6
+trump_tweets <- trump_tweets_raw |> 
+  # wrangling
+  mutate(
+    # extract source, could be done with one regex
+    source = str_extract(statusSource, "Twitter for (.*?)<"), 
+    source = str_remove_all(source, "Twitter for |<")
+  )
+
+trump_tweets |> 
+  count(source, hour = hour(with_tz(created, "EST")))|> 
+  mutate(percent = n / sum(n))|> 
+  ggplot(aes(hour, percent, color = source)) +
+  geom_line() +
+  scale_y_continuous(labels = scales::percent_format()) +
+  labs(x = "Hour of day (EST)",
+       y = "% of tweets",
+       color = "") +
+  labs(title = "Source of Trump's Tweets as provided by Twitter") +
+  theme_minimal()
+```
+
+
+::: {.ref}
+Part of tutorial: @robinson_david_text_2016
+:::
+
+## Overrepresented words
+
+```{r}
+#| echo: true
+trump_tweets_long <- trump_tweets |>
+  filter(
+    is.na(replyToSID),
+    !str_detect(text, '^"')
+  ) |>
+  tidytext::unnest_tokens(word, text,
+    token = "regex",
+    patter = "([^A-Za-z\\d#@']|'(?![A-Za-z\\d#@]))"
+  )
+
+trump_tweets_long |>
+  count(word, source) |>
+  filter(
+    sum(n) >= 5,
+    !is.na(source),
+    nchar(word) > 4,
+    !word %in% tidytext::stop_words$word
+  ) |>
+  pivot_wider(names_from = source, values_from = n, values_fill = 0) |>
+  ungroup() |>
+  mutate(across(where(is.numeric), \(x) x + 1)) |>
+  mutate(logratio = log2(Android / iPhone)) |>
+  arrange(desc(logratio)) |>
+  mutate(col = ifelse(logratio < 0, "iPhone", "Android")) |>
+  group_by(col) |>
+  slice_max(order_by = abs(logratio), n = 15) |>
+  mutate(word = fct_reorder(word, logratio, .desc = TRUE)) |>
+  ggplot(aes(x = logratio, y = word, fill = col)) +
+  geom_col() +
+  scale_fill_manual(values = c("Android" = "#3DDC84", "iPhone" = "#9DA5A8")) +
+  theme_minimal()
+```
+
+::: {.ref}
+Part of tutorial: @robinson_david_text_2016
+:::
+
+## Sentiment analysis
+
+```{r}
+#| echo: true
+nrc_dict <- textdata::lexicon_nrc()
+trump_tweets_long |> 
+  filter(source %in% c("Android", "iPhone")) |> 
+  inner_join(nrc_dict, by = "word") |> 
+  count(sentiment, source, sort = TRUE) |>
+  group_by(source) |> 
+  mutate(pct = n / sum(n)) |> 
+  ggplot(aes(x = pct, y = sentiment, fill = source)) +
+  geom_col(position = "dodge") +
+  scale_fill_manual(values = c("Android" = "#3DDC84", "iPhone" = "#9DA5A8")) +
+  theme_minimal()
+```
+
+::: {.ref}
+Part of tutorial: @robinson_david_text_2016
+:::
+
+![](media/R-01/tweet.png){.fragment}
+
+## Reverse Engineering Chinese Social Media Censorship
+
+## Background
+
+::: {.incremental}
+- collected massive dataset of Chinese social media posts and blogs
+- goal of the study: evaluate text-as-data methods in Chinese
+- to validate: go back to the posts to see context
+- But wait! they are gone!
+- Since the scraping of Chinese media was done faster than the deletions: opportunity to study traces of censorship!
+:::
+
+::: {.ref}
+Source: @king_chinse_censortship; @king_reverse
+:::
+
+## Research Question: Which ones are gone?
+
+:::: {.columns}
+
+::: {.column width="50%"}
+::: {.incremental}
+- Criticism of the government? 
+  - <span style='color:red;'>**No!**</span>
+- Is collective action censored?
+  - <span style='color:green;'>**Yes!**</span>
+:::
+:::
+
+::: {.column width="50%"}
+![](media/R-01/king_plot.png){.fragment width="90%"}
+
+::: {.ref}
+Source: @king_chinse_censortship
+:::
+:::
+::::
+
+## Manterrupting in the German Bundestag
+
+RQ: are women more often interrupted than men in politics? @och_manterrupting_2020
+
+![](media/R-01/interuption.png)
+
+## Manterrupting in the German Bundestag  {visibility="uncounted"}
+
+RQ: are women more often interrupted than men in politics? @och_manterrupting_2020
+
+![](media/R-01/Manterrupting.png)
+
+# Case Study: What is better, R, Python, Rust or JavaScript?
+
+## Data
+
+We get data from Bluesky.
+It's not particularly representative or relevant (yet!), but data access is very straightforward!
+
+1. Get an account: <https://bsky.app/>
+2. Get an app password: <https://bsky.app/settings/app-passwords>
+3. Log into Bluesky via `atrrr` 
+4. Success!
+
+## Data
+
+```{r}
+#| eval: false
+library(atrrr)
+r_skeets <- search_skeet("#rstats", limit = Inf)
+python_skeets <- search_skeet("#python", limit = Inf)
+rust_skeets <- search_skeet("#rust", limit = Inf)
+javascript_skeets <- search_skeet("#javascript", limit = Inf)
+```
+
+```{r}
+#| eval: true
+#| echo: false
+# I used the canned version of the data, so there are no surprises during the recording
+library(atrrr)
+if (file.exists("data/R-01/hashtags.rds")) {
+  hashtags_all <- readRDS("data/R-01/hashtags.rds")
+  r_skeets          <- hashtags_all$r
+  python_skeets     <- hashtags_all$python
+  rust_skeets       <- hashtags_all$rust
+  javascript_skeets <- hashtags_all$javascript
+} else {
+  r_skeets <- search_skeet("#rstats", limit = Inf)
+  python_skeets <- search_skeet("#python", limit = Inf)
+  rust_skeets <- search_skeet("#rust", limit = Inf)
+  javascript_skeets <- search_skeet("#javascript", limit = Inf)
+  hashtags_all <- list(
+    r = r_skeets,
+    python = python_skeets,
+    rust = rust_skeets,
+    javascript = javascript_skeets
+  )
+  saveRDS(hashtags_all, "data/R-01/hashtags.rds")
+  rio::export(hashtags_all, "data/R-01/hashtags.xlsx")
+}
+```
+
+## Data wrangling
+
+```{r}
+skeet_data <- bind_rows(
+  list(
+    r = r_skeets,
+    python = python_skeets,
+    rust = rust_skeets,
+    javascript = javascript_skeets
+  ), .id = "search"
+)
+```
+
+80/20 Rule of Data Science: You will spend 80% of your time collecting, cleaning and organizing your data (source unknown)
+
+## Take a look at the data!
+
+::: {.fragment}
+```{r}
+glimpse(r_skeets)
+```
+:::
+
+## Steps?
+
+::: {.incremental}
+1. Generate questions about your data.
+- What is the most popular data science language on Bluesky?
+:::
+
+## Plotting Cheatsheet
+
+[Plotting Cheatsheet](cheatsheet.html){target="blank"}
+
+Actually quite a bit better: <https://www.data-to-viz.com/>
+
+## Number of posts
+
+```{r}
+skeet_data |> 
+  count(search) |> 
+  ggplot(aes(x = search, y = n)) +
+  geom_col()
+```
+
+::: {.incremental}
+- Important rule on social media: just because something exists does not mean anyone is seeing it!
+:::
+
+## The steps
+
+::: {.incremental}
+1. Generate questions about your data.
+2. Search for answers by visualising, transforming, and modelling your data.
+:::
+
+## What is most liked?
+### Top Posts
+
+```{r}
+skeet_data |> 
+  slice_max(like_count, n = 15) |> 
+  mutate(text_short = paste0(author_name, ": ", str_trunc(text, 25)),
+         text_short = fct_reorder(text_short, like_count)) |> 
+  ggplot(aes(x = like_count, y = text_short, fill = search)) +
+  geom_col() +
+  scale_fill_manual(values = c("rust" = "black", "r" = "#125FB0"))
+```
+
+### Total likes
+
+```{r}
+skeet_data |> 
+  group_by(search) |> 
+  summarise(like_count = sum(like_count)) |> 
+  ggplot(aes(x = like_count, y = search, fill = search)) +
+  geom_col() +
+  scale_fill_manual(values = c("rust" = "black", 
+                               "r" = "#125FB0",
+                               "python" = "#3573A6",
+                               "javascript" = "#F1E15A"))
+```
+
+
+## Account with most likes
+
+```{r}
+skeet_data |> 
+  group_by(author_name) |> 
+  summarise(like_count = sum(like_count),
+            search = head(search, 1)) |> 
+  ungroup() |> 
+  slice_max(order_by = like_count, n = 15) |> 
+  mutate(author_name = fct_reorder(author_name, like_count)) |> 
+  ggplot(aes(x = like_count, y = author_name, fill = search)) +
+  geom_col() +
+  scale_fill_manual(values = c("rust" = "black", 
+                               "r" = "#125FB0",
+                               "python" = "#3573A6",
+                               "javascript" = "#F1E15A")) +
+  labs(x = NULL, y = NULL, fill = NULL,
+       title = "Top Bsky Posters by likes\n(#python, #rust, #javascript and #rstats") +
+  theme_minimal() +
+  theme(legend.position = "bottom")
+```
+
+## Most prolific accounts
+
+```{r}
+skeet_data |> 
+  count(author_handle, search, name = "post_count") |> 
+  slice_max(order_by = post_count, n = 15) |> 
+  mutate(author_handle = fct_reorder(author_handle, post_count)) |> 
+  ggplot(aes(x = post_count, y = author_handle, fill = search)) +
+  geom_col() +
+  scale_fill_manual(values = c("rust" = "black", 
+                               "r" = "#125FB0",
+                               "python" = "#3573A6",
+                               "javascript" = "#F1E15A")) +
+  labs(x = NULL, y = NULL, fill = NULL,
+       title = "Top Bsky Posters by number of skeets\n(#python, #rust, #javascript and #rstats") +
+  theme_minimal() +
+  theme(legend.position = "bottom")
+```
+
+## Test your theory
+
+Theory: R posts are the most popular, followed by Rust, Python and Javascript
+
+### Mean likes
+
+```{r}
+skeet_data |> 
+  group_by(search) |> 
+  summarise(like_count = mean(like_count)) |> 
+  ggplot(aes(x = like_count, y = search, fill = search)) +
+  geom_col() +
+  scale_fill_manual(values = c("rust" = "black", 
+                               "r" = "#125FB0",
+                               "python" = "#3573A6",
+                               "javascript" = "#F1E15A"))
+```
+
+### Model mean likes
+
+```{r}
+ggplot(skeet_data, aes(x = search, y = like_count)) +
+  geom_boxplot()
+```
+
+```{r}
+ggplot(skeet_data, aes(x = search, y = like_count)) +
+  geom_violin()
+```
+
+```{r}
+ggplot(skeet_data, aes(x = like_count, y = search)) +
+  ggridges::geom_density_ridges()
+```
+
+### Model: Kruskal-Wallis
+
+```{r}
+kruskal.test(like_count ~ search, data = skeet_data)
+```
+
+Given the extremely small p-value (less than 2.2e-16), the result is highly statistically significant. This indicates strong evidence against the null hypothesis, suggesting that there is a significant difference in the median `like_count` across at least two of the search groups being compared. 
+
+```{r}
+library(rstatix)
+dunn_test(skeet_data, like_count ~ search)
+```
+
+Base on Dunn's Test of Multiple Comparisons, this is the rank of data science languages:
+
+| # | language   |
+| - | ---------- |
+| 1 | R          |
+| 2 | Rust       |
+| 3 | Python     |
+| 4 | Javascript |
+
+## Test your theory
+
+More R posts bring you more likes.
+
+```{r}
+skeet_data |> 
+  group_by(author_handle) |> 
+  summarise(skeet_count = n(),
+            like_count = sum(like_count),
+            search = head(search, 1)) |>
+  ggplot(aes(x = skeet_count, y = like_count, color = search)) +
+  geom_point() +
+  scale_fill_manual(values = c("rust" = "black", 
+                               "r" = "#125FB0",
+                               "python" = "#3573A6",
+                               "javascript" = "#F1E15A"))
+```
+
+::: {.fragment}
+```{r}
+skeet_data |> 
+  group_by(author_handle) |> 
+  summarise(skeet_count = n(),
+            like_count = sum(like_count),
+            search = head(search, 1)) |>
+  ggplot(aes(x = skeet_count, y = like_count, color = search)) +
+  geom_hex() +
+  scale_fill_gradient(low = "yellow", high = "firebrick") +
+  facet_wrap(vars(search), scales = "free")
+```
+:::
+
+::: {.fragment}
+```{r}
+skeet_data |>
+  group_by(author_handle) |>
+  summarise(
+    skeet_count = n(),
+    like_count = sum(like_count),
+    search = head(search, 1)
+  ) |>
+  ggplot(aes(x = skeet_count, y = like_count, color = search)) +
+  geom_point() +
+  geom_smooth(method = "lm", formula = y ~ x)
+```
+:::
+
+## The steps
+
+::: {.incremental}
+1. Generate questions about your data.
+2. Search for answers by visualising, transforming, and modelling your data.
+3. Use what you learn to refine your questions and/or generate new questions.
+:::
+
+## What makes the posts with different # different?
+### How old are the skeets?
+
+```{r}
+skeet_data |> 
+  mutate(date = as.Date(indexed_at)) |>  
+  ggplot(aes(x = date, colour = search)) +
+  geom_freqpoly() +
+  scale_fill_manual(values = c("rust" = "black", 
+                               "r" = "#125FB0",
+                               "python" = "#3573A6",
+                               "javascript" = "#F1E15A"))
+```
+```{r}
+skeet_data |> 
+  mutate(date = as.Date(indexed_at)) |>  
+  ggplot(aes(x = date, y = search, fill = search)) +
+  ggridges::geom_density_ridges(alpha = 0.7) +
+  scale_fill_manual(values = c("rust" = "black", 
+                               "r" = "#125FB0",
+                               "python" = "#3573A6",
+                               "javascript" = "#F1E15A"))
+```
+
+### Used hashtags
+
+```{r}
+skeet_data |> 
+  unnest(tags) |> 
+  count(search, tags, sort = TRUE) |>
+  group_by(search) |> 
+  slice_max(order_by = n, n = 15, with_ties = ) |>
+  mutate(tags = tidytext::reorder_within(tags, n, search)) |> 
+  ggplot(aes(x = n, y = tags, fill = search)) +
+  geom_col() +
+  facet_wrap(vars(search), scales = "free") +
+  tidytext::scale_y_reordered() +
+  scale_fill_manual(values = c("rust" = "black", 
+                               "r" = "#125FB0",
+                               "python" = "#3573A6",
+                               "javascript" = "#F1E15A"))
+```
+
+## Overused words
+
+```{r}
+library(tidytext)
+library(tidylo)
+bigram_log_odds <- skeet_data |> 
+  unnest_tokens(bigram, text, token = "ngrams", n = 2, drop = FALSE) |> 
+  select(search, text, bigram) |> 
+  filter(!is.na(bigram)) |> 
+  count(search, bigram, sort = TRUE) |> 
+  bind_log_odds(search, bigram, n) |> 
+  arrange(-log_odds_weighted)
+bigram_log_odds
+```
+
+::: {.fragment}
+```{r}
+bigram_log_odds |>
+  group_by(search) |>
+  slice_max(log_odds_weighted, n = 10) |>
+  ungroup() |>
+  mutate(bigram = reorder(bigram, log_odds_weighted)) |>
+  ggplot(aes(log_odds_weighted, bigram, fill = search)) +
+  geom_col(show.legend = FALSE) +
+  facet_wrap(vars(search), scales = "free") +
+  labs(y = NULL) +
+  scale_fill_manual(values = c("rust" = "black", 
+                               "r" = "#125FB0",
+                               "python" = "#3573A6",
+                               "javascript" = "#F1E15A"))
+```
+:::
+
+::: {.ref}
+Source: @silge_text_2017
+:::
+
+# References
+
