@@ -20,7 +20,7 @@ format:
       echo: true
       cache: true
       freeze: true
-    slide-number: true
+    slide-number: false
     chalkboard: false
     preview-links: auto
     smaller: false
@@ -36,7 +36,7 @@ format:
     code-block-bg: slate
     reference-location: document
     logo: media/logo_gesis.png
-    footer: "*Link to Live Course Website Here*"
+    # footer: "*Link to Live Course Website Here*"
     email-obfuscation: javascript
 highlight-style: "nord"
 bibliography: references.bib
